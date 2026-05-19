@@ -3,7 +3,7 @@
 
 // "module" declares the module path — a unique name used for imports.
 // By convention it matches the repository URL, but it can be any string.
-module github.com/a-namazbekov/go-sample
+module github.com/iamthebonbon/go-sample
 
 // "go" sets the minimum Go version this module requires.
 // The toolchain will warn if you try to build with an older version.
