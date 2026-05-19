@@ -5,6 +5,7 @@ package main
 // "import" brings in standard library packages (or external ones).
 // These are Go's built-in packages — no installation needed.
 import (
+	"fmt"
 	"log"      // for logging messages to stderr
 	"net/http" // for building HTTP servers and clients
 )
@@ -31,8 +32,9 @@ func setupRoutes() *http.ServeMux {
 func main() {
 	mux := setupRoutes()
 
+	fmt.Printf("Server is running on %d", 8080)
 	// log.Println writes a timestamped line to stderr.
-	log.Println("listening on :8080")
+	// log.Println("listening on ")
 
 	// http.ListenAndServe starts the HTTP server.
 	// It blocks forever (runs until the program is killed).
